@@ -18,7 +18,7 @@
 <body ng-app="myApp" ng-controller="myCtrl">
     <div>
         <h1>
-            Welcome to My Webpage
+            Welcome to my website
             <!--<img src="Images/iitb.png" alt="IITB logo" style="float:left;width:90px;height:90px;" />-->
         </h1>
         <h2>
@@ -28,34 +28,8 @@
 
     <div>
         <h3>
-            Tell me about yourself:
-            <img src="Images/me.jpg" alt="Me" width="300" height="300" style="float:right;border:solid" />
+            <img src="Images/me.jpg" alt="Me" width="300" height="300" style="float:left;border:solid" />
         </h3>
-
-        Your Name:
-        <input type="password" ng-model="name">
-        <b> &nbsp;&nbsp; Hello {{ name }} !</b>
-
-        <br />
-
-        <form name="myForm">
-            Your email id:
-            <input type="email" name="myAddress" ng-model="text">
-            <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
-        </form>
-
-        Your favourite color:
-        <input style="background-color:{{myCol}}" ng-model="myCol">
-        Mine's violet, also because it matched the background ;)
-        <br />
-
-        <h3>Now about me:</h3>
-        <p style="margin-bottom:-20px">Hobbies:</p>
-        <ul>
-            <li ng-repeat="i in hobbies">
-                {{ i }}
-            </li>
-        </ul>
     </div>
 
     <div class="footer" ng-init="Name='Yash Agrawal';id='yash040599@gmail.com'">
